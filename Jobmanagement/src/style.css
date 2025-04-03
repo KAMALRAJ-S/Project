@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+}
+
+#main-container {
+    display: flex;  
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    align-content: space-evenly;
+    row-gap: 30px;
+    /* border: 2px solid red; */
+    flex-direction: column;
+}
+
+/* Navigation */
+#nav-container {
+    display: flex;
+    margin-top: 10px;
+    width: 900px;
+    height: 80px;
+    font-size: 16px;
+    border-radius: 122px;
+    box-shadow: 0px 0px 20px 0px #7F7F7F26;
+}
+
+#nav-itemcontainer {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nav-itemcontainer li img {
+    height: 44px;
+    object-fit: contain;
+}
+
+.nav-button {
+    height: 38px;
+    width: 110px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.nav-button:hover {
+    box-shadow: -2px 3px 5px 0px #7F7F7F26;
+    transform: scale(1.04);
+    transition-duration: 0.15s;
+}
+
+.nav-create-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Transparent Hover Element */
+.hover-trigger {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    border-radius: 50px;
+    background-color: transparent;
+    /* border: 2px solid red; */
+    transform: translate(0px,2px);
+    cursor: default;
+    z-index: 4;
+}
+
+/* Main Create Button */
+.nav-createbtn {
+    height: 38px;
+    width: 123px;
+    border-radius: 30px;
+    border: none;
+    color: #FFFFFF;
+    background-image: linear-gradient(#A128FF, #6100AD);
+    cursor: pointer;
+    position: relative;
+}
+
+/* Span Container */
+#span-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    position: absolute;
+    transform: translate(13px, -20px);
+}
+
+/* Default styles */
+#crjobs, #logn {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover Effects */
+.hover-trigger:hover + .nav-createbtn + #span-container #crjobs {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.hover-trigger:hover + .nav-createbtn + #span-container #logn {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.hover-trigger:hover + .nav-createbtn {
+    box-shadow: -2px 3px 5px 0px #7F7F7F26;
+    transform: scale(1.04);
+    transition-duration: 0.15s;
+}
+
+/* Initial states */
+#crjobs {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#logn {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+/* Filter area */
+#filter-container {
+    display: flex;
+    list-style: none;
+    column-gap: 50px;
+}
+
+#f1, #f2, #f3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+#f1 img, #f2 img, #f3 img {
+    height: 16px;
+}
+
+#f1 input, #f2 select, #f3 select {
+    border: none;
+    outline: none;
+    width: 280px;
+    color: #686868;
+}
+
+/* Salary Slider */
+#f4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    row-gap: 10px;
+}
+
+/* Salary Container */
+.salary-container {
+    width: 250px;
+}
+
+/* Label */
+.salary-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.range-slider-container {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.range-slider {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background: #ddd;
+    border-radius: 3px;
+}
+
+/* Active slider bar */
+.slider-bar {
+    position: absolute;
+    height: 3px;
+    background: #000000;
+    border-radius: 3px;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Slider Thumbs */
+.slider-thumb {
+    position: absolute;
+    top: -5px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 5px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: all 0.1s ease-in-out;
+}
+
+
+/* Salary Value Labels */
+.salary-value {
+    position:absolute;
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+    transform: translate(170px,-32px);
+}
+
+.vertical-line {
+    height: 48px; /* Adjust height */
+    border-left: 2px solid #EAEAEA; /* Change thickness and color */
+}
+
+
+
