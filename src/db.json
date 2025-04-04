@@ -1,0 +1,92 @@
+{
+  "detials": [
+    {
+      "id": "49ee",
+      "jobTitle": "Full-Stack Developer",
+      "companyName": "Amazon",
+      "location": "Chennai",
+      "jobType": "FullTime",
+      "salaryMin": "300000",
+      "salaryMax": "500000",
+      "applicationDeadline": "2025-04-11",
+      "jobDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente doloremque, deserunt quaerat architecto voluptate neque repellat quos rem ab?"
+    },
+    {
+      "id": "9551",
+      "jobTitle": "Software Developer",
+      "companyName": "Flipkart",
+      "location": "Bangalore",
+      "jobType": "FullTime",
+      "salaryMin": "350000",
+      "salaryMax": "400000",
+      "applicationDeadline": "2025-04-18",
+      "jobDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente doloremque, deserunt quaerat architecto voluptate neque repellat quos rem ab?"
+    },
+    {
+      "id": "9551",
+      "jobTitle": "Software Developer",
+      "companyName": "Flipkart",
+      "location": "Bangalore",
+      "jobType": "FullTime",
+      "salaryMin": "350000",
+      "salaryMax": "400000",
+      "applicationDeadline": "2025-04-18",
+      "jobDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente doloremque, deserunt quaerat architecto voluptate neque repellat quos rem ab?"
+    },
+    {
+      "id": "9551",
+      "jobTitle": "Java Developer",
+      "companyName": "Oracle",
+      "location": "Bangalore",
+      "jobType": "FullTime",
+      "salaryMin": "350000",
+      "salaryMax": "450000",
+      "applicationDeadline": "2025-04-18",
+      "jobDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente doloremque, deserunt quaerat architecto voluptate neque repellat quos rem ab?"
+    },
+    {
+      "id": "9551",
+      "jobTitle": "Software Developer",
+      "companyName": "Wipro",
+      "location": "Hyderabad",
+      "jobType": "FullTime",
+      "salaryMin": "350000",
+      "salaryMax": "450000",
+      "applicationDeadline": "2025-04-18",
+      "jobDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente doloremque, deserunt quaerat architecto voluptate neque repellat quos rem ab?"
+    },
+    {
+      "id": "9551",
+      "jobTitle": "Software Developer",
+      "companyName": "Flipkart",
+      "location": "Bangalore",
+      "jobType": "FullTime",
+      "salaryMin": "350000",
+      "salaryMax": "400000",
+      "applicationDeadline": "2025-04-18",
+      "jobDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente doloremque, deserunt quaerat architecto voluptate neque repellat quos rem ab?"
+    },
+    {
+      "id": "9551",
+      "jobTitle": "Software Developer",
+      "companyName": "Flipkart",
+      "location": "Bangalore",
+      "jobType": "FullTime",
+      "salaryMin": "350000",
+      "salaryMax": "400000",
+      "applicationDeadline": "2025-04-18",
+      "jobDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente doloremque, deserunt quaerat architecto voluptate neque repellat quos rem ab?"
+    },
+    {
+      "id": "9551",
+      "jobTitle": "Software Developer",
+      "companyName": "Flipkart",
+      "location": "Bangalore",
+      "jobType": "FullTime",
+      "salaryMin": "350000",
+      "salaryMax": "400000",
+      "applicationDeadline": "2025-04-18",
+      "jobDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente doloremque, deserunt quaerat architecto voluptate neque repellat quos rem ab?"
+    }
+  ]
+}

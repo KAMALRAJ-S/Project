@@ -6,14 +6,13 @@ import jtype from "./assets/jtype.png";
 import JobForm from "./Jobform"; // Import the JobForm component
 import "./style.css";
 
-const Navigation = () => {
+const Navigation = ({ openForm }) => {
   const minSalary = 20000;
   const maxSalary = 100000;
   const step = 5000;
 
   const [minValue, setMinValue] = useState(50000);
   const [maxValue, setMaxValue] = useState(80000);
-  const [isFormOpen, setIsFormOpen] = useState(false); // Controls pop-up visibility
 
   const trackRef = useRef(null);
   const minThumbRef = useRef(null);
@@ -74,10 +73,10 @@ const Navigation = () => {
           <li><button className="nav-button">About us</button></li>
           <li><button className="nav-button">Testimonials</button></li>
           <li className="nav-create-container">
-            <div className="hover-trigger" onClick={() => setIsFormOpen(true)}></div>
+            <div className="hover-trigger" onClick={openForm}></div>
             <button className="nav-createbtn"></button>
             <span id="span-container">
-              <span id="crjobs" onClick={() => setIsFormOpen(true)}>Create Jobs</span>
+              <span id="crjobs" onClick={openForm}>Create Jobs</span>
               <span id="logn">Login</span>
             </span>
           </li>
@@ -130,9 +129,6 @@ const Navigation = () => {
           </li>
         </ul>
       </section>
-
-      {/* Job Creation Form Pop-up */}
-      {isFormOpen && <JobForm onClose={() => setIsFormOpen(false)} />}
     </main>
   );
 };

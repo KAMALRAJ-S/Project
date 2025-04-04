@@ -23,7 +23,7 @@
     background: white;
     border-radius: 16px;
     padding: 20px;
-    min-height: 600px;  /* Ensures a default height but allows expansion */
+    min-height: 550px;  /* Ensures a default height but allows expansion */
     width: 700px;
     max-width: 90%;
     max-height: 90vh; /* Restricts it from becoming too large */
@@ -129,6 +129,6 @@
 
   
   #symbol{
-    transform: rotate(90deg);
+    transform:rotate(90deg);
     position: absolute;
   }

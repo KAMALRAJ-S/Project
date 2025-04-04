@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Jobform.css";
 
-const JobForm = ({ onClose }) => {
+const JobForm = ({ onClose, fetchJobs }) => {
   const [formData, setFormData] = useState({
     jobTitle: "",
     companyName: "",
@@ -17,9 +17,28 @@ const JobForm = ({ onClose }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+
+    try {
+      const response = await fetch("http://localhost:5000/detials", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Job submitted successfully:", formData);
+        fetchJobs(); // Refresh job list
+      } else {
+        console.error("Failed to submit job");
+      }
+    } catch (error) {
+      console.error("Error submitting job:", error);
+    }
+
     onClose();
   };
 
@@ -27,7 +46,7 @@ const JobForm = ({ onClose }) => {
     <div className="job-form-overlay" onClick={onClose}>
       <div className="job-form-container" onClick={(e) => e.stopPropagation()}>
         <h2>Create Job Opening</h2>
-        <form onSubmit={handleSubmit} id="form">
+        <form onSubmit={handleSubmit}>
           <div className="form-group">
             <div className="form-group-group">
               <label>Job Title</label>
@@ -118,14 +137,13 @@ const JobForm = ({ onClose }) => {
                 name="jobDescription"
                 value={formData.jobDescription}
                 onChange={handleChange}
-                placeholder="Please share a description to let the candidate know more about the job role"
+                placeholder="Job role details"
                 required
               ></textarea>
             </div>
           </div>
 
           <div className="form-actions">
-            <button type="button" className="save-draft">Save Draft <span id="symbol"> »</span></button>
             <button type="submit" className="publish">Publish »</button>
           </div>
         </form>
